@@ -8,16 +8,16 @@
 #include <WiFiClientSecure.h>
 
 
-#define _SSID "Galaxy_S23"          // Your WiFi SSID
-#define _PASSWORD "k9fxaxhuxdpdchw"  // Your WiFi Password
-#define REFERENCE_URL "https://proje1-eb887-default-rtdb.europe-west1.firebasedatabase.app/"  // Your Firebase project reference URL
+#define _SSID ""          // Your WiFi SSID
+#define _PASSWORD ""  // Your WiFi Password
+#define REFERENCE_URL "/"  // Your Firebase project reference URL
 
-unsigned long channelID = 2390495;   // ThingSpeak channel ID
+unsigned long channelID = ;   // ThingSpeak channel ID
 unsigned int field_no = 1;
-const char *writeAPIKey = "DJQZ5JP2XL3RSU0C";  // ThingSpeak write API Key
-const char *readAPIKey = "ACSDTTGQ4HDP8PRK";   // ThingSpeak read API Key
-#define BOTtoken "6723529764:AAGYOX_jaeIiza6e27idbWConrrvtB_Nl_4"  //telegram bot
-#define CHAT_ID "6264898322" // telegram id bot
+const char *writeAPIKey = "";  // ThingSpeak write API Key
+const char *readAPIKey = "";   // ThingSpeak read API Key
+#define BOTtoken ""  //telegram bot
+#define CHAT_ID "" // telegram id bot
 
 Firebase firebase(REFERENCE_URL);
 
@@ -32,8 +32,8 @@ UniversalTelegramBot bot(BOTtoken,client);
 WiFiClient client1;
 
 // Add your coordinates here
-float latitude = 40.770582;  // Change this to your latitude
-float longitude = 30.399733;  // Change this to your longitude
+float latitude = "";  // Change this to your latitude
+float longitude = "";  // Change this to your longitude
 
 void setup()
 {
